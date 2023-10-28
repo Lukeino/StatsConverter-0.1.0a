@@ -6,7 +6,7 @@ Python-tesseract: https://pypi.org/project/pytesseract/
 
 <img src="https://github.com/Luca00IT/icons/blob/main/Tesseract_OCR_logo_(Google).png" width="500" />
 
-## Manual MODE (50% completed)
+## MANUAL Mode (50% completed)
 Manual mode consists of the following steps:
 
 - Upload a .jpg/.png image from your computer
@@ -15,7 +15,7 @@ Manual mode consists of the following steps:
 
 And that's it. With these few steps you can then download the .txt file or the .xls file as needed both containing the extracted text from the images.
 
-## Auto MODE (0% completed)
+## AUTO Mode (0% completed)
 Auto mode consists of a series of automatic steps such as:
 
 - Select a database category (video games, basic software, etc...)
