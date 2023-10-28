@@ -7,7 +7,13 @@ Python-tesseract: https://pypi.org/project/pytesseract/
 <img src="https://github.com/Luca00IT/icons/blob/main/Tesseract_OCR_logo_(Google).png" width="500" />
 
 ## Manual MODE (50% completed)
-Manual mode is to load a jpg or png file into the software and extract from it a .txt file containing the text or create a real .xls file by easily importing your own templates to speed up the creation of statistics from images.
+Manual mode consists of the following steps:
+
+- Upload a .jpg/.png image from your computer
+- Select the structure of your .xls file
+- Create or import a database of strings
+
+And that's it. With these few steps you can then download the .txt file or the .xls file as needed both containing the extracted text from the images.
 
 ## Auto MODE (0% completed)
 Auto mode consists of a series of automatic steps such as:
