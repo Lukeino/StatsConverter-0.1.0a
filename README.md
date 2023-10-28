@@ -6,10 +6,10 @@ Python-tesseract: https://pypi.org/project/pytesseract/
 
 <img src="https://github.com/Luca00IT/icons/blob/main/Tesseract_OCR_logo_(Google).png" width="500" />
 
-##Manual MODE (50% completed)
+## Manual MODE (50% completed)
 Manual mode is to load a jpg or png file into the software and extract from it a .txt file containing the text or create a real .xls file by easily importing your own templates to speed up the creation of statistics from images.
 
-##Auto MODE (0% completed)
+## Auto MODE (0% completed)
 Auto mode consists of a series of automatic steps such as:
 
 - Select a database category (video games, basic software, etc...)
