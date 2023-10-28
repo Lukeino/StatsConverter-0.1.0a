@@ -17,4 +17,4 @@ Auto mode consists of a series of automatic steps such as:
 - Select a key to press to take screenshots
 - Select additional or full mode, which adds data to each screenshot to a single excel or creates a full excel to each screenshot
 
-And that's it. With the automatic mode, it will be possible to create entire excel pages with a single key.
+And that's it. With the automatic mode, it will be possible to create entire stats with a single key.
