@@ -1,0 +1,70 @@
+﻿<Window x:Class="StatsLover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StatsLover"
+        mc:Ignorable="d"
+        Title="StatsLover" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid x:Name="grid">
+        <Grid.Background>
+            <ImageBrush ImageSource="/StatsLover UI Redux v2.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="403*"/>
+            <ColumnDefinition Width="397*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="432" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>
+        <Button x:Name="customizeStatsButton" Content="Customize" HorizontalAlignment="Left" Margin="100,217,0,0" VerticalAlignment="Top" Height="33" Width="96" Foreground="White" Background="#FF454545" FontFamily="Verdana" FontSize="16" Click="customizeStatsButton_OnClick"/>
+        <Button x:Name="pickImageButton_Copia" HorizontalAlignment="Left" Margin="283,153,0,0" VerticalAlignment="Top" Click="pickImageButton_OnClick" Height="30" Width="38" Background="#FF454545" AutomationProperties.ItemType="" Content="..." Foreground="White" FontFamily="Verdana" FontSize="16" RenderTransformOrigin="0.024,0.586"/>
+        <Rectangle HorizontalAlignment="Left" Height="30" Margin="102,153,0,0" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.5,0.5" Fill="#FF8F8F8F">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock x:Name="imageToConvertText" HorizontalAlignment="Left" Margin="102,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Verdana" FontSize="16" Width="176" TextTrimming="CharacterEllipsis" Height="25" Text=""/>
+        <Rectangle x:Name="txtReadyManual" HorizontalAlignment="Left" Height="46" Margin="33,287,0,0" VerticalAlignment="Top" Width="2" Fill="#FF3AEB1A" Visibility="Hidden"/>
+        <Button x:Name="downloadTxtManual" Content="......" HorizontalAlignment="Left" Margin="35,286,0,0" VerticalAlignment="Top" Width="40" Height="46" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="downloadTxtManual_OnClick" Visibility="Hidden" Background="{x:Null}"/>
+        <Rectangle x:Name="customizeStatsPage" HorizontalAlignment="Left" Height="284" Margin="-26,120,0,0" VerticalAlignment="Top" Width="412" Fill="#FF555555" Visibility="Hidden"/>
+        <TextBlock x:Name="customStatsTitle" HorizontalAlignment="Left" Margin="10,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Verdana" Text="CUSTOM STATS" FontWeight="Bold" FontSize="18" Visibility="Hidden"/>
+        <TextBlock x:Name="importXlsText" HorizontalAlignment="Left" Margin="15,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Verdana" Text="Import xls structure" Visibility="Hidden"/>
+        <Rectangle x:Name="structureRectangle" HorizontalAlignment="Left" Height="30" Margin="15,216,0,0" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.5,0.5" Fill="#FF8F8F8F" Visibility="Hidden">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="pickStructureButton" HorizontalAlignment="Left" Margin="202,216,0,0" VerticalAlignment="Top" Click="pickStructureButton_OnClick" Height="30" Width="38" Background="#FF454545" AutomationProperties.ItemType="" Content="..." Foreground="White" FontFamily="Verdana" FontSize="16" RenderTransformOrigin="0.024,0.586" Visibility="Hidden"/>
+        <Button x:Name="saveCustomButton" HorizontalAlignment="Left" Margin="323,374,0,0" VerticalAlignment="Top" Click="saveCustomButton_OnClick" Height="30" Width="48" Background="#FF454545" AutomationProperties.ItemType="" Content="Save" Foreground="White" FontFamily="Verdana" FontSize="16" RenderTransformOrigin="0.024,0.586" Visibility="Hidden"/>
+        <Button x:Name="cancelCustomButton" HorizontalAlignment="Left" Margin="258,374,0,0" VerticalAlignment="Top" Click="cancelCustomButton_OnClick" Height="30" Width="60" Background="#FF454545" AutomationProperties.ItemType="" Content="Cancel" Foreground="White" FontFamily="Verdana" FontSize="16" RenderTransformOrigin="0.024,0.586" Visibility="Hidden"/>
+        <TextBlock x:Name="structureText" HorizontalAlignment="Left" Margin="20,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Verdana" FontSize="16" Width="176" TextTrimming="CharacterEllipsis" Height="25" Text="" Visibility="Hidden"/>
+        <Button x:Name="settingsButton" Grid.Column="1" HorizontalAlignment="Left" Margin="350,382,0,0" VerticalAlignment="Top" Width="37" Height="35" Click="settingsButton_OnClick" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Content="........"/>
+        <Canvas x:Name="creditsUI" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="421" Margin="168,54,0,0" VerticalAlignment="Top" Width="464" Visibility="Hidden">
+            <Rectangle x:Name="settingsPage" Height="431" Width="800" RenderTransformOrigin="0.5,0.5" Fill="#FF8F8F8F" HorizontalAlignment="Left" Canvas.Top="-53" VerticalAlignment="Top" Canvas.Left="-168">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <TextBlock x:Name="Credits" TextWrapping="Wrap" Foreground="White" FontFamily="Verdana" Text="Credits" Height="208" Width="190" FontSize="36" HorizontalAlignment="Left" Canvas.Left="164" VerticalAlignment="Top"/>
+            <TextBlock x:Name="Credits1" TextWrapping="Wrap" Foreground="White" FontFamily="Verdana" Text="Programming, UI Deisgn" Height="208" Width="464" FontSize="20" TextAlignment="Center" HorizontalAlignment="Left" Canvas.Top="78" VerticalAlignment="Top" Canvas.Left="-6"/>
+            <TextBlock x:Name="Credits2" TextWrapping="Wrap" Foreground="White" FontFamily="Verdana" Text="Luca00IT" Height="208" Width="190" FontSize="16" TextAlignment="Center" HorizontalAlignment="Left" Canvas.Left="131" Canvas.Top="114" VerticalAlignment="Top"/>
+            <TextBlock x:Name="Credits3" TextWrapping="Wrap" Foreground="White" FontFamily="Verdana" Text="Creative Commons Legal Code" Height="208" Width="402" FontSize="16" TextAlignment="Center" HorizontalAlignment="Left" Canvas.Left="28" Canvas.Top="188" VerticalAlignment="Top"/>
+            <TextBlock x:Name="Credits4" TextWrapping="Wrap" Foreground="White" FontFamily="Verdana" Text="Attribution 4.0 International (CC BY 4.0)" Height="208" Width="402" FontSize="16" TextAlignment="Center" HorizontalAlignment="Left" Canvas.Left="28" Canvas.Top="213" VerticalAlignment="Top"/>
+            <Button x:Name="closeSettingsButton" Click="closeSettingsButton_OnClick" Height="30" Width="60" Background="#FF454545" AutomationProperties.ItemType="" Content="Close" Foreground="White" FontFamily="Verdana" FontSize="16" RenderTransformOrigin="0.024,0.586" HorizontalAlignment="Left" Canvas.Left="517" Canvas.Top="287" VerticalAlignment="Top"/>
+        </Canvas>
+    </Grid>
+</Window>
