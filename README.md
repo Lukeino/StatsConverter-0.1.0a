@@ -1,4 +1,4 @@
-# StatsLover
+# StatsConverter
 
 Using "Python-tesseract," an OCR (Optical Character Recognition) tool, StatsLover converts images and/or screenshots of one's computer into statistics.
 
