@@ -7,6 +7,7 @@ Tired of manually transcribing statistics from screenshots or images? **StatsCon
 ### How it Works:
 
 StatsConverter is primarily a **WPF (C#) desktop application** that seamlessly integrates with a Python backend. The C# application handles the user interface and overall workflow, while a dedicated Python script (`ImageToText.py`) performs the heavy lifting of OCR using `pytesseract` and the Tesseract OCR engine.
+
 <img src="https://github.com/Luca00IT/icons/blob/main/Tesseract_OCR_logo_(Google).png" width="500" />
 
 ### Key Features:
