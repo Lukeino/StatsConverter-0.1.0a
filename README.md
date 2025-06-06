@@ -13,9 +13,7 @@ StatsConverter is primarily a **WPF (C#) desktop application** that seamlessly i
 ### Key Features:
 
 * **Text Extraction from Images:** Converts `.jpg` and `.png` image files into plain text.
-* **Flexible Manual Mode:** Provides granular control over the data extraction and integration process.
-* **Innovative Automatic Mode:** Captures and organizes statistics in real-time, often with a single key press.
-* **Versatile Output:** Generates `.txt` files or structured `.xls` (Excel) files containing the extracted data.
+* **Versatile Output:** Generates `.txt` files containing the extracted data.
 
 ### Technologies Used:
 
@@ -25,7 +23,7 @@ StatsConverter is primarily a **WPF (C#) desktop application** that seamlessly i
     * [Pytesseract on PyPI](https://pypi.org/project/pytesseract/)
 * **Tesseract OCR Engine:** The core Optical Character Recognition engine.
 
-### RELEASE 0.1.0a: Your Starting Point
+### RELEASE 0.1.0a: The Starting Point
 
 This is the initial public release of the project, encompassing core functionalities for data extraction and organization. The project is under continuous development, with the aim of adding new features and enhancing the user experience.
 
